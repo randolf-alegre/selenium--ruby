@@ -6,7 +6,7 @@
     2. Run the following command: 
         * bundle install
 
-### Setup MailCatcher for sending emails whenever test failed.
+### PRE-REQUISITE! Setup MailCatcher for sending emails whenever test failed.
 
 1. Run this command:  gem install mailcatcher
 2. Type in your console: mailcatcher
@@ -28,7 +28,7 @@ Run to your console:
     * crontab -e
     * Press i to insert.
     * Update the file and add this:
-        1 * * * * /bin/bash -l -c 'cd <FULL PATH OF THE PROJECT> && bundle exec rake test_runner:execute_test  >> log/test.log 2>&1'
+        3 * * * * /bin/bash -l -c 'cd <FULL PATH OF THE PROJECT> && bundle exec rake test_runner:execute_test'
     * Press i again then type :wq! to save changes.
 
 
